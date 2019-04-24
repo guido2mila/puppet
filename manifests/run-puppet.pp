@@ -9,3 +9,7 @@ cron { 'run-puppet':
   hour    => '*',
   minute  => '*/5',
 }
+
+file { '/tmp/pippo.txt':
+  content => "Ciao mondo!";
+} 
