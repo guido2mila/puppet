@@ -10,6 +10,12 @@ cron { 'run-puppet':
   minute  => '*/5',
 }
 
-file { '/tmp/pippo.txt':
-  content => "Ciao mondo!";
-} 
+package { 'ruby':
+  ensure => installed,
+}
+
+package { 'puppet-lint':
+  ensure => installed,
+  provider => gem,
+}
+
