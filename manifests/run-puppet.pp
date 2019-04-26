@@ -24,7 +24,6 @@ user { 'guido':
   uid    => '3001',
   home   => '/home/guido',
   shell  => '/bin/bash',
-  groups => ['devs'],
 }
 
 ssh_authorized_key { 'guizzunti':
