@@ -26,6 +26,14 @@ user { 'guido':
   shell  => '/bin/bash',
 }
 
+
+file { '/home/guido/.ssh':
+  ensure => 'directory',
+  user =>   'guido',
+  group =>  'guido',
+  mode =>   '0700'
+}
+
 ssh_authorized_key { 'guizzunti':
   user => 'guido',
   type => 'ssh-dss',
