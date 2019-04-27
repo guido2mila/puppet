@@ -1,0 +1,3 @@
+package { 'atop':
+  ensure => installed,
+}
